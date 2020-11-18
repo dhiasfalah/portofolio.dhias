@@ -199,7 +199,7 @@ p {
 /* Header section */
 #header {
 	position: fixed;
-	z-index: 2;
+	z-index: 1000;
 	left: 0;
 	top: 0;
 	width: 100vw;
@@ -216,9 +216,8 @@ p {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 90%;
+	max-width: 1300px;
 	padding: 0 10px;
-	overflow: hidden;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -237,7 +236,7 @@ p {
 	transition: .5s ease left;
 }
 #header .nav-list ul.active {
-	left:   0;
+	left: 0%;
 	opacity: .5;
 }
 #header .nav-list ul a {
@@ -256,10 +255,10 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.5);
+	color: rgba(240, 248, 255, 0.021);
 	font-size: 13rem;
 	letter-spacing: 50px;
-	z-index: 1;
+	z-index: -1;
 	transition: .3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
@@ -279,9 +278,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 2;
+	z-index: 100;
 	cursor: pointer;
 	transform: scale(.8);
+	margin-right: 20px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -326,7 +326,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./imges/IMG_5926.JPG);
+	background-image: url(../imges/IMG_5926.JPG);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -550,8 +550,19 @@ p {
 /* End Projects section */
 
 /* Slider */
- section .slider {
+section .mySlides{
+	height: 100%;
+	height: 100vh;
+}
+section .text{
+	position: absolute;
+	margin-top: 27%;
+	left: 25%;
+	font-size: 8vw;
+}
+section .slider {
 	position: relative;
+	height: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -561,11 +572,14 @@ p {
 }
 section #slider{
 	position: absolute;
+	width: 100%;
+	height: 100vh;
 	top: 0;
 	left: 0;
 	object-fit: cover;
 }
 section .navigation {
+	max-width: 50%;
 	position: absolute;
 	bottom: 40px;
 	left: 50%;
@@ -577,19 +591,22 @@ section .navigation {
 section .navigation li {
 	list-style: none;
 	cursor: pointer;
-	margin: 10px;	
+	margin: 10px;
 }
 section .navigation li img {
 	width: 150px;
 	border: 2px solid #fff;
 	border-radius: 2px solid #fff;
 }
+section .text-slider {
+	margin: 40% auto;
+}
 section h2 {
 	position: relative;
-	font-size: 8rem;
-	color: whitesmoke;
+	font-size: 8vw;
 	text-align: center;
 	max-width: 100%;
+	color: whitesmoke;
 	text-shadow: 0 15px 10px rgba(0,0,0,0.5);
 }
 /* Button */
@@ -598,7 +615,7 @@ section h2 {
     cursor: pointer;
     position: absolute;
 	color: rgb(138, 138, 138);
-    font-size: 100px;
+    font-size: 8vw;
     transition: 0.6s ease;
     user-select: none;
 }
@@ -617,22 +634,18 @@ section h2 {
 
 /* Text Animation */
 .textanimation{
-	position: relative;
+	position: absolute;
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	height: 100vh;
 	font-family: 'popins', sans-serif;
 }
-.textanimation .tpi{
-	position: absolute;
-	border: 2px solid red;
-
-}
 .textanimation h2{
-	margin-top: 125px;
+	left: -50%;
+	margin-top: 15%;
 	text-shadow: none;
-	font-size: 15rem;
+	font-size: 11vw;
 	color: #485563;
 	-webkit-text-stroke: 0.1vw blue;
 	text-transform: uppercase;
@@ -665,6 +678,9 @@ section h2 {
 	width: 100%;
 }
 #about .col-right h2 {
+	max-width: 100%;
+	color: whitesmoke;
+	text-shadow: 0 15px 10px rgba(0,0,0,0.5);
 	font-size: 4rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
@@ -862,9 +878,9 @@ section h2 {
 	#profile .profile-bottom .profile-item {
 		flex-basis: 45%;
 		margin: 2.5%;
-		height: 350px;
 	}
 	/* End Profile Section */
+
 
 	/* Project */
 	#projects .project-item {
@@ -885,17 +901,6 @@ section h2 {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	.slider h2{
-		top: -80px;
-	}
-	/* .textanimation tpi{
-		width: 100%;
-		height: 125px;
-	}
-	.textanimation h2{
-		margin: 10% auto;
-	} */
-
 	/* End Project */
 
 	/* About */
@@ -986,7 +991,6 @@ section h2 {
 	#profile .profile-bottom .profile-item {
 		flex-basis: 22%;
 		margin: 1.5%;
-		height: 350px;
 	}
 }
 /* End  Media Query For Desktop */
