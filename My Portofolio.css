@@ -769,12 +769,9 @@ section h2 {
 /* End Keyframes */
 
 /* Media Query For Phone */
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 428px) {
 	#header .nav-list ul {
 		display: none;
-	}
-	#header .nav-list ul.active {
-		display: flex;
 	}
 	section .navigation li img {
 		width: 19vw;
@@ -934,11 +931,16 @@ section h2 {
 	section .navigation li img {
 		width: 150px;
 	}
-	
 	section .slider,
 	section #slider,
 	section .mySlides {
 		height: 100vh;
+	}
+	#hero .picture img {
+		width: 28vh;
+		height: 28vh;
+		right: 25vh;
+		top: 35vh;
 	}
 }
 /* End  Media Query For Desktop */
