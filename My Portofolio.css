@@ -794,7 +794,6 @@ section h2 {
 	height: -webkit-fill-available;
 	}
 }
-}
 /* ANd Media Query For Phone */
 
 
@@ -934,6 +933,10 @@ section h2 {
 	}
 	section .navigation li img {
 		width: 150px;
+	}section .slider,
+	section #slider,
+	section .mySlides {
+		height: 100vh;
 	}
 }
 /* End  Media Query For Desktop */
