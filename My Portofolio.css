@@ -218,6 +218,7 @@ p {
 	height: 100%;
 	max-width: 1300px;
 	padding: 0 10px;
+	overflow: hidden;
 }
 #header .nav-list ul {
 	list-style: none;
@@ -232,7 +233,6 @@ p {
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
-	overflow-x: hidden;
 	transition: .5s ease left;
 }
 #header .nav-list ul.active {
@@ -326,7 +326,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./imges/IMG_5926.JPG);
+	background-image: url(../imges/IMG_5926.JPG);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -857,6 +857,25 @@ section h2 {
 	}
 }
 /* End Keyframes */
+
+/* Media Query For Phone */
+@media only screen and (min-width: 300px) {
+	#header .nav-list ul {
+		display: none;
+	}
+	#header .nav-list ul.active {
+		display: flex;
+	}
+	section .navigation li img {
+		width: 49px;
+	}
+	#hero .picture img {
+		right: 9vh;
+		top: 11vh;
+	}
+}
+/* ANd Media Query For Phone */
+
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
