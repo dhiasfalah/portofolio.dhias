@@ -770,12 +770,6 @@ section h2 {
 
 /* Media Query For Phone */
 @media only screen and (min-width: 428px) {
-	#header .nav-list ul {
-		display: none;
-	}
-	section .navigation li img {
-		width: 19vw;
-	}
 	#hero .picture img {
 		right: 9vh;
 		top: 11vh;
