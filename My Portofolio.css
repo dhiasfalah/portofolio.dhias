@@ -33,6 +33,95 @@ p {
 	letter-spacing: .05rem;
 }
 
+
+/* Welcome */
+	/* .welcome{
+		width: 100%;
+		height: 100vh;
+		background: black;
+	}
+	#Welcome {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation: ful 5s linear forwards;
+	}
+	#Welcome path{
+		animation: Welcome 5s ease forwards;
+	}
+	#Welcome path:nth-child(1) {
+		stroke-dasharray: 570;
+		stroke-dashoffset: 570;
+	}
+
+	#Welcome path:nth-child(2) {
+		stroke-dasharray: 353;
+		stroke-dashoffset: 353;
+		animation: welcome 2s ease forwards 0.3s;
+	}
+
+	#Welcome path:nth-child(3) {
+		stroke-dasharray: 240;
+		stroke-dashoffset: 240;
+		animation: welcome 2s ease forwards 0.6s;
+	}
+
+	#Welcome path:nth-child(4) {
+		stroke-dasharray: 338;
+		stroke-dashoffset: 338;
+		animation: welcome 2s ease forwards 0.9s;
+	}
+
+	#Welcome path:nth-child(5) {
+		stroke-dasharray: 250;
+		stroke-dashoffset: 250;
+		animation: welcome 2s ease forwards 1.2s;
+	}
+
+	#Welcome path:nth-child(6) {
+		stroke-dasharray: 504;
+		stroke-dashoffset: 504;
+		animation: welcome 2s ease forwards 1.5s;
+	}
+
+	#Welcome path:nth-child(7) {
+		stroke-dasharray: 353;
+		stroke-dashoffset: 353;
+		animation: welcome 2s ease forwards 1.8s;
+	}
+
+	#Welcome path:nth-child(8) {
+		stroke-dasharray: 446;
+		stroke-dashoffset: 446;
+		animation: welcome 2s ease forwards 2.1s;
+	}
+
+	#Welcome path:nth-child(9) {
+		stroke-dasharray: 267;
+		stroke-dashoffset: 267;
+		animation: welcome 2s ease forwards 2.4s;
+	}
+
+	@keyframes Welcome {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+	@keyframes ful {
+		from{
+			fill: transparent;
+			opacity: 1;
+			z-index: 5;
+		}
+		to {
+			fill: white;
+			opacity: 0;
+		}
+	} */
+/* And welcome */
+
+
 /* Cursor */
 .cursor{
     position: fixed;
@@ -237,7 +326,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./imges/IMG_5926.JPG);
+	background-image: url(../imges/IMG_5926.JPG);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -338,7 +427,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./imges/IMG_8452.jpg);
+	background-image: url(../imges/IMG_8452.jpg);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
